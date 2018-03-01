@@ -28,7 +28,7 @@ public class KeywordController {
     private Database database;
 
     public void init() {
-        System.out.println("Test2");
+        database = new Database();
     }
 
     public void updateBtns() {

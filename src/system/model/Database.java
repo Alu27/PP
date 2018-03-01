@@ -12,14 +12,14 @@ public class Database {
 
     public Database() {
         try {
-            conn = DriverManager.getConnection("jdbc:sqlite:/Dokumentverwaltung.db");
+            conn = DriverManager.getConnection("jdbc:sqlite:Dokumentverwaltung.db");
 
             try (Statement statement = conn.createStatement()) {
                 statement.execute("CREATE TABLE IF NOT EXISTS keywordsDB " +
                         "(" + " ID INTEGER PRIMARY KEY, keywords VARCHAR(20));");
             }
         } catch (SQLException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
@@ -35,7 +35,7 @@ public class Database {
             }
             return returnval;
         } catch (SQLException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
         return null;
     }
@@ -57,10 +57,10 @@ public class Database {
 
                 return keywords;
             } catch (SQLException e) {
-                System.out.println(e);
+                e.printStackTrace();
             }
         } catch (SQLException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
         return null;
     }
@@ -73,7 +73,7 @@ public class Database {
             statement.setInt(1, keywords.getId());
             return statement.executeUpdate();
         } catch (SQLException e) {
-            System.out.println(e);
+            e.printStackTrace();;
         }
         return -1;
     }

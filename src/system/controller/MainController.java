@@ -1,6 +1,5 @@
 package system.controller;
 
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,7 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import system.Main;
 import system.model.Database;
 import system.model.Documents;
 
@@ -43,19 +41,21 @@ public class MainController {
 
     @FXML
     public void init() {
-        System.out.println("Test");
+        database = new Database();
     }
+
+
 
     public void openKeywordsAction(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(Main.class.getResource("system/view/GUI2.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("system/view/GUIKeyword.fxml"));
             Stage stage = new Stage();
             stage.initOwner(((TextArea)actionEvent.getSource()).getScene().getWindow());
             stage.setTitle("Keywords Configure");
             stage.setScene(new Scene(root, 500, 250));
             stage.show();
         } catch (IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 }
