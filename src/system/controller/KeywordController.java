@@ -38,6 +38,7 @@ public class KeywordController {
                 .getSelectionModel().getSelectedItems().size() > 0));
     }
 
+    // Fügt Keywords der Liste hinzu
     public void secondHandlePlusAction(ActionEvent actionEvent) {
         TextInputDialog dialog = new TextInputDialog("New Item");
         dialog.setContentText("neuer Eintrag:");
@@ -46,12 +47,14 @@ public class KeywordController {
         Optional<String> result = dialog.showAndWait(); // wait for user input
     }
 
+    // Löscht den bestimmten Keyword aus der Datenbank und der List
     public void secondHandleMinusAction(ActionEvent actionEvent) {
         // important: delete from database first
         database.deleteKeyword(listView.getSelectionModel().getSelectedItem());
         model.remove(listView.getSelectionModel().getSelectedIndex());
     }
 
+    // Schließt die GUIKeyword
     public void FirstButtonCancelAction(ActionEvent actionEvent) {
         Stage stage = (Stage) firstButtonCancel.getScene().getWindow();
         stage.close();

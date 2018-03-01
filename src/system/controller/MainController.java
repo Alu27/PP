@@ -10,6 +10,7 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import system.model.Database;
 import system.model.Documents;
+import system.Main;
 
 import java.io.IOException;
 
@@ -39,13 +40,14 @@ public class MainController {
     private Database database;
     private ObservableList<Documents> model;
 
+    // Initialisiert die Datenbank
     @FXML
     public void init() {
         database = new Database();
     }
 
-
-
+    // Öffnet die GUIKeyword, wenn der Button gedürckt wird
+    @FXML
     public void openKeywordsAction(ActionEvent actionEvent) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("system/view/GUIKeyword.fxml"));

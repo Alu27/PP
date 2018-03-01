@@ -10,6 +10,7 @@ import java.util.List;
 public class Database {
     private Connection conn;
 
+    // Datenbank erstellt eine Verbindung und erstellt die Tabelle
     public Database() {
         try {
             conn = DriverManager.getConnection("jdbc:sqlite:Dokumentverwaltung.db");
@@ -23,6 +24,7 @@ public class Database {
         }
     }
 
+    // Bekommt die Keywords aus der Datenbank
     public List<Keywords> getKeyword() {
         try (Statement statement = conn.createStatement()) {
             ResultSet result;
