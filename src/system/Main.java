@@ -5,25 +5,29 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import system.model.Database;
+import system.controller.KeywordController;
+import system.controller.MainController;
+
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("view/main.fxml"));
-        primaryStage.setTitle("Dokumentenverwaltung");
-        primaryStage.setScene(new Scene(root, 500, 600));
+        FXMLLoader loader = new FXMLLoader();
+
+        Parent root = loader.load(getClass().getResource("view/GUI.fxml").openStream());
+
+        MainController controller = loader.getController();
+        controller.init();
+
+        primaryStage.setTitle("Documents Management");
+        primaryStage.setScene(
+                new Scene(root, 500, 600));
         primaryStage.show();
-        Database db = new Database();
     }
 
 
     public static void main(String[] args) {
         launch(args);
-    }
-
-    public static void terminate(Exception e) {
-
     }
 }

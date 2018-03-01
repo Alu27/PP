@@ -21,7 +21,7 @@
                               <Insets left="5.0" right="10.0" top="5.0" />
                            </HBox.margin>
                         </TextField>
-                        <Button fx:id="buttonDatei" mnemonicParsing="false" onAction="#handleButtonDatei" prefHeight="26.0" prefWidth="31.0" text="...">
+                        <Button fx:id="buttonDatei" mnemonicParsing="false" prefHeight="26.0" prefWidth="31.0" text="...">
                            <HBox.margin>
                               <Insets right="5.0" top="5.0" />
                            </HBox.margin>
@@ -39,7 +39,7 @@
                               <Insets left="5.0" right="10.0" top="5.0" />
                            </HBox.margin>
                         </TextField>
-                        <Button fx:id="buttonURL" mnemonicParsing="false" onAction="#handleButtonURL" prefHeight="26.0" prefWidth="31.0" text="...">
+                        <Button fx:id="buttonURL" mnemonicParsing="false" prefHeight="26.0" prefWidth="31.0" text="...">
                            <HBox.margin>
                               <Insets right="5.0" top="5.0" />
                            </HBox.margin>
@@ -57,7 +57,7 @@
                               <Insets left="5.0" right="10.0" top="5.0" />
                            </HBox.margin>
                         </TextField>
-                        <Button fx:id="buttonArchiv" mnemonicParsing="false" onAction="#handleButtonArchiv" prefHeight="26.0" prefWidth="31.0" text="...">
+                        <Button fx:id="buttonArchiv" mnemonicParsing="false" prefHeight="26.0" prefWidth="31.0" text="...">
                            <HBox.margin>
                               <Insets right="5.0" top="5.0" />
                            </HBox.margin>
@@ -70,12 +70,12 @@
       </TabPane>
       <HBox prefHeight="88.0" prefWidth="467.0">
          <children>
-            <Button fx:id="secondButtonCancel" mnemonicParsing="false" onAction="#secondHandleCancel" text="Abbrechen">
+            <Button fx:id="secondButtonCancel" mnemonicParsing="false" text="Abbrechen">
                <HBox.margin>
                   <Insets left="340.0" right="13.5" top="30.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="secondButtonOK" mnemonicParsing="false" onAction="#secondHandleOK" text="OK">
+            <Button fx:id="secondButtonOK" mnemonicParsing="false" text="OK">
                <HBox.margin>
                   <Insets top="30.0" />
                </HBox.margin>

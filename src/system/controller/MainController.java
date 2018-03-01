@@ -1,30 +1,70 @@
 package system.controller;
 
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.util.Callback;
+import system.Main;
+import system.model.Database;
+import system.model.Documents;
 
+import java.io.IOException;
+import java.util.Observable;
 import java.util.Optional;
 
 
 public class MainController {
     @FXML
-    TableView tableView;
+    public TableView tableView;
     @FXML
-    Button buttonPlusDbGui;
+    public TableColumn IDCol;
     @FXML
-    Button buttonMinusDbGui;
+    public Button buttonPlusDbGui;
     @FXML
-    TextField textFieldId;
+    public Button buttonMinusDbGui;
     @FXML
-    TextField textFieldTitle;
+    public TextField textFieldId;
     @FXML
-    TextField textFieldAuthor;
+    public TextField textFieldTitle;
     @FXML
-    TextField textFieldKeywords;
+    public TextField textFieldAuthor;
     @FXML
-    TextField textFieldReference;
+    public TextField textFieldKeywords;
+    @FXML
+    public TextField textFieldReference;
+    @FXML
+    public Button openKeywords;
+//
+    private Database database;
+    private ObservableList<Documents> model;
 
+    @FXML
+    public void init() {
+        // set data model
+        database = new Database();
 
+    }
+
+    public void openKeywordsAction(ActionEvent actionEvent) {
+        try {
+            Parent root = FXMLLoader.load(Main.class.getResource("system/view/GUI 2.fxml"));
+            Stage stage = new Stage();
+            stage.initOwner(((TextArea)actionEvent.getSource()).getScene().getWindow());
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.setTitle("Keywords Configure");
+            stage.setScene(new Scene(root, 500, 250));
+            stage.show();
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+    }
 }

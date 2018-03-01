@@ -15,7 +15,7 @@
          </VBox.margin></ListView>
       <HBox prefHeight="51.0" prefWidth="373.0">
          <children>
-            <Button fx:id="buttonPlusListView" mnemonicParsing="false" onAction="#secondHandlePlus" prefHeight="32.0" prefWidth="35.0" text="+">
+            <Button fx:id="buttonPlusListView" mnemonicParsing="false" prefHeight="32.0" prefWidth="35.0" text="+">
                <HBox.margin>
                   <Insets left="10.0" right="12.0" top="3.0" />
                </HBox.margin>
@@ -23,7 +23,7 @@
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button fx:id="buttonMinusListView" mnemonicParsing="false" onAction="#secondHandleMinus" prefHeight="32.0" prefWidth="35.0" text="-">
+            <Button fx:id="buttonMinusListView" mnemonicParsing="false" prefHeight="32.0" prefWidth="35.0" text="-">
                <HBox.margin>
                   <Insets right="180.0" top="3.0" />
                </HBox.margin>
@@ -31,12 +31,12 @@
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button fx:id="firstButtonCancel" mnemonicParsing="false" onAction="#firstHandleCancel" text="Abbrechen">
+            <Button fx:id="firstButtonCancel" mnemonicParsing="false" text="Abbrechen">
                <HBox.margin>
                   <Insets right="12.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="firstButtonOK" mnemonicParsing="false" onAction="#firstHandleOK" text="OK">
+            <Button fx:id="firstButtonOK" mnemonicParsing="false" text="OK">
                <HBox.margin>
                   <Insets top="12.0" />
                </HBox.margin>
