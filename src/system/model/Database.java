@@ -15,7 +15,6 @@ public class Database {
             conn = DriverManager.getConnection("jdbc:sqlite:/Dokumentverwaltung.db");
 
             try (Statement statement = conn.createStatement()) {
-                statement.execute("CREATE TABLE IF NOT EXISTS documentsDB");
                 statement.execute("CREATE TABLE IF NOT EXISTS keywordsDB " +
                         "(" + " ID INTEGER PRIMARY KEY, keywords VARCHAR(20));");
             }

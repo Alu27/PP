@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/8.0.162" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/8.0.162" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.controller.MainController">
    <children>
       <TableView fx:id="tableView" prefHeight="270.0" prefWidth="528.0">
         <columns>
@@ -111,7 +111,7 @@
                <GridPane.margin>
                   <Insets right="5.0" />
                </GridPane.margin></TextField>
-            <Button fx:id="openKeywords" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="..." GridPane.columnIndex="2">
+            <Button fx:id="openKeywords" onAction="openKeywordsAction" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="..." GridPane.columnIndex="2">
                <GridPane.margin>
                   <Insets left="4.0" top="18.0" />
                </GridPane.margin>

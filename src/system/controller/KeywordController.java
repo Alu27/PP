@@ -28,9 +28,7 @@ public class KeywordController {
     private Database database;
 
     public void init() {
-        // set data model
-        database = new Database();
-        model = FXCollections.observableArrayList( database.getKeyword() );
+        System.out.println("nahui2");
     }
 
     public void updateBtns() {

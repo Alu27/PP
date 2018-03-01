@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="org.jsimpledb:jsimpledb-kv-sqlite:3.6.1" type="repository">
+    <properties maven-id="org.jsimpledb:jsimpledb-kv-sqlite:3.6.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jsimpledb/jsimpledb-kv-sqlite/3.6.1/jsimpledb-kv-sqlite-3.6.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jsimpledb/jsimpledb-kv/3.6.1/jsimpledb-kv-3.6.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jsimpledb/jsimpledb-util/3.6.1/jsimpledb-util-3.6.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/dellroad/dellroad-stuff-main/2.2.1/dellroad-stuff-main-2.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jsimpledb/jsimpledb-kv-sql/3.6.1/jsimpledb-kv-sql-3.6.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.16.1/sqlite-jdbc-3.16.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
