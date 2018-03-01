@@ -28,7 +28,7 @@ public class KeywordController {
     private Database database;
 
     public void init() {
-        System.out.println("nahui2");
+        System.out.println("Test2");
     }
 
     public void updateBtns() {
@@ -44,12 +44,6 @@ public class KeywordController {
         dialog.setTitle("Hinzufügen");
         dialog.setHeaderText("Hier kann ein Schlagwort hinzugefügt werden");
         Optional<String> result = dialog.showAndWait(); // wait for user input
-//        if( result.isPresent() ) {
-//            // FIXME: HIER WAR ARTEM DAS GEHT NICHT MEHR WEIL WEGEN IST SO LOMBOK IST SCHEIßE
-//            Item item = new Item(result.get().toString());
-//            item = database.addItem(item); // get Item with new id
-//            model.add(item);
-//        }
     }
 
     public void secondHandleMinusAction(ActionEvent actionEvent) {
@@ -58,7 +52,6 @@ public class KeywordController {
         model.remove(listView.getSelectionModel().getSelectedIndex());
     }
 
-    @FXML
     public void FirstButtonCancelAction(ActionEvent actionEvent) {
         Stage stage = (Stage) firstButtonCancel.getScene().getWindow();
         stage.close();

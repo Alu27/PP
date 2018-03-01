@@ -44,8 +44,6 @@ public class Database {
         if( keywords.getId() != null ) { // item is not new
             throw new IllegalArgumentException("Item has primary key (not new).");
         }
-
-        // get new primaty key
         try (Statement statement = conn.createStatement()) {
             ResultSet result = statement.executeQuery("SELECT MAX(ID) + 1 AS newid FROM keywordsDB;");
             int newID = result.getInt(1);

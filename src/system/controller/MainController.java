@@ -43,7 +43,7 @@ public class MainController {
 
     @FXML
     public void init() {
-        System.out.println("Nahui");
+        System.out.println("Test");
     }
 
     public void openKeywordsAction(ActionEvent actionEvent) {
